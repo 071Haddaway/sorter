@@ -2,51 +2,75 @@
   "transactions": [
     {
       "id": 1,
-      "description": "Desenvolvimento de site",
-      "type": "income",
-      "category": "Venda",
-      "price": 14000,
+      "name": "Mario Santana",
+      "socialAccount": "marioSantana123",
       "createdAt": "2023-01-19T14:21:05.505Z"
     },
     {
       "id": 2,
-      "description": "Hamburguer",
-      "type": "outcome",
-      "category": "Alimentação",
-      "price": 60,
-      "createdAt": "2023-01-19T11:41:05.505Z"
+      "name": "Gabriel Santos",
+      "socialAccount": "gabrielSantos423",
+      "createdAt": "2023-01-23T18:28:46.535Z"
     },
     {
       "id": 3,
-      "description": "Ignite Rocketseat",
-      "type": "outcome",
-      "category": "Educação",
-      "price": 1980,
-      "createdAt": "2023-01-20T19:24:05.505Z"
+      "name": "Lucio Cavalcante",
+      "socialAccount": "LucioCavalcante22",
+      "createdAt": "2023-01-23T18:29:00.215Z"
     },
     {
-      "description": "Desenvolvimento de app",
-      "price": 1000,
-      "category": "Venda",
-      "type": "income",
-      "createdAt": "2023-01-23T14:14:17.900Z",
+      "name": "João Shuffle",
+      "socialAccount": "jShuffle",
+      "createdAt": "2023-01-25T17:34:18.270Z",
       "id": 4
     },
     {
-      "description": "1",
-      "price": 2,
-      "category": "3",
-      "type": "income",
-      "createdAt": "2023-01-23T14:24:53.313Z",
+      "name": "mario",
+      "socialAccount": "mborges",
+      "createdAt": "2023-01-26T03:31:24.203Z",
       "id": 5
     },
     {
-      "description": "iogurte de banaa ",
-      "price": 123,
-      "category": "1",
-      "type": "outcome",
-      "createdAt": "2023-01-23T14:51:54.417Z",
+      "name": "xxt",
+      "socialAccount": "ccfcfc",
+      "createdAt": "2023-01-26T03:59:49.117Z",
       "id": 6
+    },
+    {
+      "name": "12",
+      "socialAccount": "12",
+      "createdAt": "2023-01-26T12:17:27.074Z",
+      "id": 7
+    },
+    {
+      "name": "qqqq",
+      "socialAccount": "qqqq",
+      "createdAt": "2023-01-27T01:52:41.244Z",
+      "id": 8
+    },
+    {
+      "name": "www",
+      "socialAccount": "wwww",
+      "createdAt": "2023-01-27T01:52:44.014Z",
+      "id": 9
+    },
+    {
+      "name": "9999",
+      "socialAccount": "9999",
+      "createdAt": "2023-01-27T01:52:49.702Z",
+      "id": 10
+    },
+    {
+      "name": "123",
+      "socialAccount": "123",
+      "createdAt": "2023-01-27T01:53:03.240Z",
+      "id": 11
+    },
+    {
+      "name": "1111",
+      "socialAccount": "11111",
+      "createdAt": "2023-01-27T01:53:09.438Z",
+      "id": 12
     }
   ]
 }

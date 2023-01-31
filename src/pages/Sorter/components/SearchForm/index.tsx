@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import { SearchFormContainer } from './styles'
 import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { TransactionsContext } from '../../../../contexts/TransactionsContext'
+import { TransactionsContext } from '../../../../contexts/ParticipantsContext'
 import { useContextSelector } from 'use-context-selector'
 
 const searchFormSchema = z.object({
@@ -36,13 +36,13 @@ export function SearchForm() {
     <SearchFormContainer onSubmit={handleSubmit(handleSearchTransactions)}>
       <input
         type="text"
-        placeholder="Busque por transações"
+        placeholder="Busque por participantes"
         {...register('query')}
       />
 
       <button type="submit" disabled={isSubmitting}>
-        <MagnifyingGlass size={20} />
         Buscar
+        <MagnifyingGlass size={20} />
       </button>
     </SearchFormContainer>
   )

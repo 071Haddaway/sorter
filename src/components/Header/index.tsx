@@ -1,22 +1,17 @@
-import { HeaderContainer, HeaderContent, NewTransactionButton } from './styles'
-import * as Dialog from '@radix-ui/react-dialog'
+import { HeaderContainer, HeaderContent } from './styles'
 
 import logoImg from '../../assets/logo.svg'
-import { NewTransactionModal } from '../NewTransactionModal'
+import { NavLink } from 'react-router-dom'
 
 export function Header() {
   return (
     <HeaderContainer>
       <HeaderContent>
-        <img src={logoImg} alt="" />
-
-        <Dialog.Root>
-          <Dialog.Trigger asChild>
-            <NewTransactionButton>Nova Transação</NewTransactionButton>
-          </Dialog.Trigger>
-
-          <NewTransactionModal />
-        </Dialog.Root>
+        <nav>
+          <NavLink to="/" title="Timer">
+            <img src={logoImg} alt="" />
+          </NavLink>
+        </nav>
       </HeaderContent>
     </HeaderContainer>
   )

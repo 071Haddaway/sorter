@@ -4,18 +4,14 @@ import { api } from '../lib/axios'
 
 interface Transaction {
   id: number
-  description: string
-  type: 'income' | 'outcome'
-  price: number
-  category: string
+  name: string
+  socialAccount: string
   createdAt: string
 }
 
 interface CreateTransactionInput {
-  description: string
-  price: number
-  category: string
-  type: 'income' | 'outcome'
+  name: string
+  socialAccount: string
 }
 
 interface TransactionContextType {
@@ -36,8 +32,8 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
   const fetchTransactions = useCallback(async (query?: string) => {
     const response = await api.get('transactions', {
       params: {
-        _sort: 'createdAt',
-        _order: 'desc',
+        _sort: 'id',
+        _order: 'asc',
         q: query,
       },
     })
@@ -47,13 +43,11 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
   const createTransaction = useCallback(
     async (data: CreateTransactionInput) => {
-      const { description, price, category, type } = data
+      const { name, socialAccount } = data
 
       const response = await api.post('transactions', {
-        description,
-        price,
-        category,
-        type,
+        name,
+        socialAccount,
         createdAt: new Date(),
       })
 
